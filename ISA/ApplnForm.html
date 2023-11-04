@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Admission Application Form</title>
+</head>
+<body>
+     
+     <h3>Please complete the following <u>Registration Form</u> to register:</h3>
+    <table>
+          <tr>
+          <td>User Name:</td>
+          <td><input type="text" name="txtUserName" size="20" /></td>
+          </tr>
+          <tr>
+          <td>Password:</td>
+          <td><input type="password" name="pwdPassword" size="20" /></td>
+          </tr>
+          <tr>
+            <td><label for="confPwd">Confirm Password:</label></td>
+             <td><input type="password" name="pwdPasswordConf" size="20"
+                   id="confPassword" /></td>
+            </tr>
+            <tr>
+                <td>Please select the check box <small>We will not pass on your details to any third party.</small></td>
+                <td><input type="checkbox" name="chkMailingList" /></td>
+                </tr>
+                <tr>
+                <td></td><br />
+                <td><input type="submit" value="Register now" style="font-weight: bold;"/></td>
+                </tr>
+
+    </table>
+    <br />
+    <h3>Please <i><b>Login</b></i> using your username and password to fill the Application Form:</h3>
+    <form action="http://www.example.com/login.asp" method="post">
+        Username:
+        <input type="text" name="txtUsername" value="" size="20" maxlength="20" />
+        <br />
+        Password:
+        <input type="password" name="pwdPassword" value="" size="20"
+        maxlength="20" />
+        <input type="submit" value="Login" style="font-weight: bold;"/>
+     </form>
+     <br />
+     <h2>International Students Admission Application Form</h2>
+    <p>Please complete the following <b><u>Admission Application Form</u></b> carefully to apply for the program of your choice of study:</p>
+     <form action="http://www.urims.uogportal.com/" method="post" name="frmComp">
+        <fieldset> 
+        <legend><em><b>Your Personal Information</b></em></legend>
+        <table>
+        <tr>
+            <td>Title:</td>
+              <td>
+              <select name="selReferrer">
+              <option selected="selected" value="">Select answer</option>
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Mss">Mss</option>
+              <option value="Sir">Sir</option>
+              <option value="Dr">Dr</option>
+              <option value="Prof">Prof</option>
+              </select>
+              </td>
+              </tr>
+            </table>
+        <label>Forename/First name: <input type="text" name="txtFName" size="20" /></label><br />
+        <label>Middle name: <input type="text" name="txtMName" size="20" /></label><br />
+        <label>Surname/Last name: <input type="text" name="txtLName" size="20" /></label>
+        <br />
+        <br />
+        <tr>
+            <td>Gender:</td>
+            <td><input type="radio" name="radSex" value="male" id="male" />
+            <label for ="male">Male</label></td>
+          </tr>
+            <tr>
+            <td></td>
+            <td><input type="radio" name="radSex" value="female" id="female" />
+            <label for="female">Female</label></td>
+            </tr>
+            <br />
+             <br />
+        <form name="frmDOB">
+                Your Date of Birth/DoB/:<br />
+                <input name="txtMonth" value="MM" size="3" maxlength="2" style="text-align: center;"
+                onkeyup="if(this.value.length>=2)
+                this.form.txtDay.focus(document.fromDOB.txtMonth.value.length);"<select name="selReferrer">
+                <input name="txtDay" value="DD" size="3" maxlength="2" style="text-align: center;"
+                onkeyup="if(this.value.length>=2)
+                this.form.txtYear.focus(document.fromDOB.txtDay.value.length);" />
+                <input name="txtYear" value="YY" size="5" maxlength="4" style="text-align: center;"
+                onkeyup="if(this.value.length>=4)
+                this.form.submit.focus(document.fromDOB.txtYear.value.length);" />
+                <input type="submit" name="submit" value="Enter DoB" />
+        </form>
+        <br />
+        <br />
+        <label>E-mail: <input type="text" name="txtEmail" size="20" /></label>
+        <br />
+        <br />
+        <label>Alternative E-mail: <input type="text" name="txtAEmail" size="20" /></label>
+        <table valign="top">
+            <tr valign="top">
+                <td>Nationality:</td>
+                  <td>
+                  <select name="selReferrer">
+                  <option selected="selected" value="">Select answer</option>
+                  </select>
+                  </td>
+            </tr>
+            <br />
+            <br />
+            <tr>
+                <td>Other Nationality:</td>
+                  <td>
+                  <select name="selReferrer">
+                  <option selected="selected" value="">Select answer</option>
+                  </select>
+                  </td>
+            </tr>
+            <br />
+            <br />
+        </table>
+        <label>Current Country of Residence: <input type="text" name="txtCRsdce" size="20" /></label><br />
+        <br />
+        <label>House Number/Name and Street: <input type="text" name="txtHNmbr" size="20" /></label><br />
+        <label>Address Line 2: <input type="text" name="txtALine2" size="20" /></label><br />
+        <label>Address Line 3: <input type="text" name="txtALine3" size="20" /></label><br />
+        <label>City: <input type="text" name="txtCity" size="20" /></label><br />
+        <label>State/Region/Province: <input type="text" name="txtRState" size="20" /></label><br />
+        <label>Post Code/Postal Code/Zip Code: <input type="text" name="txtPCode" size="20" /></label><br />
+        <label>Country: <input type="text" name="txtCtry" size="20" /></label><br />
+        <label>Tel No(Mobile): <input type="text" name="txtTMble" size="20" /></label><br />
+        <label>Tel No(Work): <input type="text" name="txtTWrk" size="20" /></label><br />
+        <label>Tel No(Home): <input type="text" name="txtTHme" size="20" /></label><br />
+        </fieldset>
+
+        <form action="http://www.urims.uogportal.com/" method="post" name="frmComp">
+             <fieldset> 
+             <legend><em><b>Your Educational Background</b></em></legend>
+       <table border="1">
+        <tr>
+            <td>
+                <label>University/School/Institute: <input type="text" name="txtUInstute" size="20" /></label><br>
+            </td>
+            <th>Date Attended:</th>
+            <td>
+                <form name="frmDATE">
+                    <b>Date From:</b><br />
+                    <input name="txtMonth" value="MM" size="3" maxlength="2" style="text-align: center;"
+                    onkeyup="if(this.value.length>=2)
+                    this.form.txtDay.focus(document.fromDATE.txtMonth.value.length);"/>
+                    <input name="txtYear" value="YY" size="5" maxlength="4" style="text-align: center;"
+                    onkeyup="if(this.value.length>=4)
+                    this.form.submit.focus(document.fromDATE.txtYear.value.length);" />
+               </form>
+            </td>
+            <td></td>
+            <td>
+                <form name="toDATE">
+                    <b>Date To:</b><br />
+                    <input name="txtMonth" value="MM" size="3" maxlength="2" style="text-align: center;"
+                    onkeyup="if(this.value.length>=2)
+                    this.form.txtDay.focus(document.toDATE.txtMonth.value.length);"/>
+                    <input name="txtYear" value="YY" size="5" maxlength="4" style="text-align: center;"
+                    onkeyup="if(this.value.length>=4)
+                    this.form.submit.focus(document.toDATE.txtYear.value.length);" />
+               </form>
+            </td>
+        </tr>
+       </table>
+            
+        
+    
+             </fieldset>
+         </form>
+     
+
+</body>
+</html>
